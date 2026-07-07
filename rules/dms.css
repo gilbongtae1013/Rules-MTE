@@ -1,0 +1,44 @@
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid black;
+    background-color: white;
+    width: 740px;
+    height: auto;
+    font-size: 20px;
+}
+body {
+    display: flex;
+    justify-content: center;
+    background-image: url('../img/ram.jpg');
+    background-size: 340px;
+    min-height: 80vh;
+    background-attachment: fixed;
+}
+#logo {
+    width: 444px;
+}
+a {
+    color: black;
+    text-decoration: none;
+}
+#homebox {
+    width: 100px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.853);
+    border: 1px solid black;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition-duration: 0.24s;
+}
+#homebox:hover {
+    background-color: rgb(212, 212, 212);
+}
+#home span {
+    font-weight: bold;
+}

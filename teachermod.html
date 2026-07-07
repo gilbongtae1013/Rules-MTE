@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>어딜가미</title>
+    <link rel="stylesheet" href="teachermod.css">
+</head>
+<body>
+    <div id="container">
+        <h1>규칙 수정 or 생성하기</h1>
+        <div id="box">
+            <form>
+                <select name="DeadorAlive" id="DeadorAlive">
+                    <option value="soojung">기존 항목 수정</option>
+                    <option value="create">새로운 규칙 추가</option>
+                </select>
+            </form>
+
+            <div id="submit_button">
+                바로가기
+            </div>
+        </div>
+    </div>
+
+    <div id="school_select_box">
+        <h1>학교 를! 선택하시오(안할시 혼냄)</h1>
+        <div id="login-box">
+            <div id="input-box">
+                <form>
+                    <select name="school" id="school">
+                        <option value="dsm">대덕소프트웨어마이스터고등학교</option>
+                        <option value="dms">대덕소프트웨어마스터이고등학교</option>
+                        <option value="nosegay">nosegay school</option>
+                        <option value="mteworld">뭉탱이월드</option>
+                    </select>
+                </form>
+            </div>
+            <div id="submit-box">
+                <button id="submit" type="button">검색조이고</button>
+            </div>
+        </div>
+    </div>
+    <a href="login.html">
+        <div id="gotohome">
+            집갈래
+        </div>
+    </a>
+
+    <script>
+        const submit_button = document.getElementById('submit_button');
+        const combobox = document.getElementById('DeadorAlive');
+        const school = document.getElementById('school_select_box');
+        const school_select = document.getElementById('school');
+        const submit = document.getElementById('submit');
+
+        submit_button.addEventListener('click', () => {
+            const cvalue = combobox.value;
+            selecter(cvalue);
+        })
+
+        function selecter(cvalue) {
+            if(cvalue == "soojung") {
+                school.classList.add('show');
+            }
+            else if(cvalue == "create") {
+                window.location.href = "ruleadd.html";
+            }
+        }
+    </script>
+</body>
+</html>

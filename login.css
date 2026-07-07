@@ -1,0 +1,110 @@
+
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#container h1{
+    color: white;
+    text-shadow: -1px 0px black, 0px 1px black, 1px 0px black, 0px -1px black;
+}
+#login-box {
+    width: 500px;
+    height: 600px;
+    border: 2.4px solid black;
+    background-color: white;
+}
+#input-box {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#input-box select {
+    width: 400px;
+    height: 40px;
+    font-size: 24px;
+}
+#submit-box {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 374px;
+}
+#submit-box button {
+    width: 400px;
+    height: 64px;
+    background-color: rgba(35, 35, 255, 0.656);
+    font-size: 34px;
+    color: white;
+    cursor: pointer;
+    transition-duration: 0.24s;
+}
+#submit-box button:hover {
+    background-color: blue;
+}
+#teachermod {
+    margin-top: 38px;
+    display: flex;
+    justify-content: right;
+    margin-right: 14px;
+}
+#teachermod span {
+    color: gray;
+}
+#teachermod a {
+    color: gray;
+    text-decoration: none;
+}
+#teachermod a:hover {
+    text-decoration: underline;
+}
+body {
+    background-image: url('img/mte.gif');
+    background-size: 400px;
+    overflow: hidden;
+}
+#wesker {
+    position: absolute;
+    width: 240px;
+    left: 24px;
+    bottom: -154px;
+}
+#chris {
+    position: absolute;
+    width: 250px;
+    left: 240px;
+    bottom: -140px;
+}
+#kimleon {
+    width: 240px;
+    position: absolute;
+    right: 0px;
+    bottom: -300px;
+}
+#mrx {
+    position: absolute;
+    width: 314px;
+    right: 180px;
+    bottom: -180px;
+}
+#hunk {
+    position: absolute;
+    width: 140px;
+    left: 454px;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+#fucking_mosquito {
+    background-color: rgba(255, 255, 255, 0.575);
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}
+#fucking_mosquito:hover {
+    background-color: white;
+}

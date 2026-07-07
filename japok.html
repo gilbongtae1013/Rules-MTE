@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>니 컴퓨터 이제 큰일 났다</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        #japok_count {
+            margin-top: 240px;
+            font-size: 144px;
+        }
+        #japok_count.active {
+            color: red;
+        }
+        #japok_count.done {
+            font-size: 104px;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="japok_count">자폭을 시작합니다</h1>
+
+
+    <script>
+    const japok_count = document.getElementById('japok_count');
+    let count = 4;
+
+    setTimeout(() => {
+        japok_count.classList.add('active');
+        japok_count.textContent = count;
+        setTimeout(()=> {
+            count--;
+            japok_count.textContent = count;
+            setTimeout(()=> {
+                count--;
+                japok_count.textContent = count;
+                setTimeout(()=> {
+                    count--;
+                    japok_count.textContent = count;
+                    setTimeout(()=> {
+                        count--;
+                        japok_count.textContent = count;
+                        setTimeout(()=> {
+                            japok_count.classList.add('done');
+                            japok_count.classList.remove('active');
+                            japok_count.textContent = '이런거 할시간에 공부하렴.';
+                        },1000)
+                    },1000)
+                },1000)
+            },1000)
+        },1000)
+    },3400);
+</script>
+</body>
+</html>
